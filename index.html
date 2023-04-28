@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hasib Mahmud</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+
+	<style>
+		/* Style for the background image */
+		body {
+			background-image: url("img/rain.gif");
+			background-size: cover;
+			background-position: center;
+			height: 100vh;
+			margin: 0;body 
+            font-family: 'Poppins', sans-serif;
+            cursor: url('img/cursor.png') 10 10, auto;
+
+		}
+		.imgs {
+            flex-direction: column;
+			align-items: center;
+			justify-content: center;
+            top: 30%;
+			left: 50%;
+            height: 96px;
+            width: 96px;
+        }
+		/* Style for the contact box */
+		.contact-box {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 500px;
+			width: 350px;
+			background-color: rgba(77, 103, 255, 0.089);
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+			color: #ffffff;
+			font-size: 1.5rem;
+			font-weight: bold;
+			text-align: center;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+            font-family: 'Poppins', sans-serif;
+
+		}
+		/* Style for the contact icons */
+		.contact-icon {
+			height: 75px;
+			margin: 20px;
+			transition: all 0.3s ease;
+			cursor: pointer;
+		}
+		
+		.contact-icon:hover {
+			transform: scale(1.2);
+		}
+	</style>
+</head>
+<body>
+	<!-- Contact box -->
+	<div class="contact-box">
+		<h2>Hasib Mahmud</h2>
+        <p>Check Out My Github Haaasib</p>
+		<img class="contact-icon" src="img/email.png" alt="Email Icon" onclick="openEmail()">
+		<img class="contact-icon" src="img/discord.png" alt="Discord Icon" onclick="openDiscord()">
+	</div>
+
+	<script>
+		// Function to open email
+		function openEmail() {
+			window.location.href = 'mailto:yourname@email.com';
+		}
+		
+		// Function to open Discord
+		function openDiscord() {
+			window.open('https://discord.com/invite/your_discord_invite_link');
+		}
+	</script>
+</body>
+</html>
